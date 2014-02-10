@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="org.foxide.perspective.FxPerspective"
+            icon="icons/perspective.png"
+            id="foxide.perspective"
+            name="Fox IDE">
+      </perspective>
+   </extension>
+   
+   <extension point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.foxide.newWizards"
+            class="org.foxide.wizard.FxNewProjectWizard"
+            finalPerspective="foxide.perspective"
+            icon="icons/fx.png"
+            id="org.foxide.wizard.NewFoxWizard"
+            name="Firefox App Project"
+            project="true">
+      </wizard>
+    </extension>
+  
+  <extension
+        point="org.eclipse.ui.perspectiveExtensions">
+     <perspectiveExtension
+           targetID="*">
+        <newWizardShortcut
+              id="org.foxide.wizard.NewFoxWizard">
+        </newWizardShortcut>
+     </perspectiveExtension>
+  </extension>
+  
+</plugin>
