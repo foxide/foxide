@@ -23,6 +23,18 @@
       </wizard>
     </extension>
   
+  <extension point="org.eclipse.ui.navigator.navigatorContent">
+    <commonWizard menuGroupId="org.foxide" type="new" wizardId="org.foxide.wizard.NewFoxWizard">
+       <enablement>
+          <with variable="selection">
+             <iterate ifEmpty="true" operator="or">
+                <instanceof value="org.eclipse.core.resources.IResource"></instanceof>
+             </iterate>
+          </with>
+       </enablement>
+    </commonWizard>
+  </extension>
+  
   <extension
         point="org.eclipse.ui.perspectiveExtensions">
      <perspectiveExtension

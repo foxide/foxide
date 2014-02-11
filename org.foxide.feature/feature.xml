@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.foxide.feature"
+      label="Feature"
+      version="1.0.0.qualifier">
+
+   <description url="https://github.com/foxide/foxide">
+      An IDE for Firefox OS App
+   </description>
+
+   <copyright url="https://github.com/foxide/foxide">
+      Copyright (c) 2014 FoxIDE project committers and others.  All rights reserved.
+   </copyright>
+
+   <license url="https://github.com/foxide/foxide">
+      Eclipse Public License Version 1.0
+   </license>
+
+   <plugin
+         id="org.foxide"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
