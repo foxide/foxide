@@ -30,3 +30,5 @@ Eclipse plugin update site
 `https://dl.dropboxusercontent.com/u/97465759/foxide/org.foxide.site/`
 
 foxide requires Eclipse Kepler
+
+<a href="http://with-eclipse.github.io/" target="_blank"><img alt="with-Eclipse logo" src="http://with-eclipse.github.io/with-eclipse-1.jpg" /></a>
