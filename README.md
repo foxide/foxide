@@ -21,6 +21,8 @@ Download
 
 [foxide for mac (108MB) ](https://dl.dropboxusercontent.com/u/97465759/foxide/foxide-macosx.zip)
 
+[foxide for windows 64bit (108MB) ](https://dl.dropboxusercontent.com/u/97465759/foxide/foxide-win64.zip)
+
 インストールフォルダのパスには日本語を含めないようにしてください。
 
 Eclipse plugin update site
