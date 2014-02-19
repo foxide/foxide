@@ -8,7 +8,6 @@ import java.net.JarURLConnection;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Path;
 import java.util.jar.JarFile;
 import java.util.zip.ZipEntry;
 
@@ -24,9 +23,12 @@ public class ImportProject {
 
     public ImportProject(URL projectUrl) throws IOException, URISyntaxException {
         this.projectUrl = projectUrl;
-        Path projectPath = new File(projectUrl.toString()).toPath();
-        Path projectFilePath = projectPath.resolve(".project");
-        this.projectFileUrl = new URL(projectFilePath.toString());
+        String projectFilePath = projectUrl.toString();
+        if (!projectFilePath.endsWith("/")) {
+            projectFilePath = projectFilePath + "/";
+        }
+        projectFilePath = projectFilePath + ".project";
+        this.projectFileUrl = new URL(projectFilePath);
         this.projectConnection = projectUrl.openConnection();
         this.projectFileConnection = projectFileUrl.openConnection();
     }
